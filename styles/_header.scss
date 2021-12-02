@@ -1,0 +1,131 @@
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 85%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1.3em 0;
+}
+
+.menu {
+
+    a{
+        text-decoration: none;
+        font-weight: 700;
+        color: white;
+    }
+
+    button{
+        cursor: pointer;
+        width: 100%;
+        padding: 0.8em 2em;
+        background-color: $Cyan;
+        border: none;
+        border-radius: 55rem;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.menu-mobile-layout{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    border-radius: 8px;
+    background-color: $Dark-Violet;
+    padding:1.5em 1em;
+
+    .menu-first-part, .menu-second-part{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+    }
+
+    .line{
+        border: 1px solid white;
+        border-radius: 55rem;
+        opacity: 0.2;
+    }
+}
+
+.hamburger{
+    cursor: pointer;
+
+    span{
+        display: block;
+        width: 28px;
+        height: 4px;
+        
+        margin-bottom: 5px;
+    
+        background: $Grayish-Violet;
+        }
+}
+
+
+
+@media only screen and( min-width: 768px) {
+
+    header{
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+        .logo{
+            margin-right: 2em;
+        }
+    }
+
+    .menu {
+
+        a{
+            color: $Dark-Violet;
+            opacity: 0.5;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    .mobile-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .menu-first-part, .menu-second-part{
+            display: flex;
+            align-items: center;
+            gap: 1.8em;
+        }
+        .menu-second-part{
+            position: relative;
+            right: 0;
+        }
+    }
+
+
+    .hamburger{
+        display: none;
+    }
+    .hidden{
+        display: block;
+    }
+    
+}
