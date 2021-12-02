@@ -5,12 +5,11 @@
   
   
 
-  More than just shorter links
+  
 
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
+  
 
-  Get Started
+  
   
   Shorten a link here...
 

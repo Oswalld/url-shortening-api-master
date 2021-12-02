@@ -22,3 +22,19 @@ section:not(.fullwidth){
     width: 100%;
     max-width: 1440px;
 }
+
+button{
+    cursor: pointer;
+    width: 100%;
+    padding: 0.6em 2.5em;
+    background-color: $Cyan;
+    border: none;
+    border-radius: 55rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
